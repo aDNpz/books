@@ -1,0 +1,18 @@
+.content {
+    margin: 16px;
+}
+
+.tablediv {
+    margin-top: 24px;
+    margin-bottom: 50px;
+}
+
+.md-fab-bottom-right{
+    position: fixed;
+    right: 35px;
+    margin-top: -30px;
+}
+
+table {
+  width: 100%;
+}

@@ -1,0 +1,50 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Book 1",
+      "isbn" : "123456789X",
+      "author": "Author1",
+      "preview": "asdfghjklö",
+      "genre": "Horror"
+    },
+    {
+        "id": 2,
+        "title": "Book 2",
+        "isbn" : "123456789X",
+        "author": "Author2",
+        "preview": "asdfghjklö",
+        "genre" : "Thriller"
+    },
+    {
+        "id": 3,
+        "title": "Book Tom Turbo 2",
+        "isbn" : "123456789X",
+        "author": "Author 3",
+        "preview": "asdfghjklö",
+        "genre" : "Action"
+    },
+    {
+        "id": 4,
+        "title": "Book Fritz Phantom",
+        "isbn" : "123456789X",
+        "author": "Author 4",
+        "preview": "asdfghjklö",
+        "genre" : "Kinder"
+    }
+  ],
+  "bookgenre" : [
+    {
+      "title" : "Horror"
+    },
+    {
+      "title" : "Action"
+    },
+    {
+      "title" : "Thriller"
+    },
+    {
+      "title" : "Kinder"
+    }
+  ]
+}

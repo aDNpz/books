@@ -1,0 +1,34 @@
+<form [formGroup]="detailForm" (ngSubmit)="onSubmit()">
+  <mat-form-field class="input-width" appearance="fill">
+    <mat-label>Title</mat-label>
+    <input matInput type="text" formControlName="title" placeholder="Title" />
+  </mat-form-field>
+
+  <mat-form-field class="input-width" appearance="fill">
+    <mat-label>Isbn</mat-label>
+    <input matInput isbn-validator formControlName="isbn" placeholder="Isbn" >
+  </mat-form-field>
+
+  <mat-form-field class="input-width" appearance="fill">
+    <mat-label>Author</mat-label>
+    <input matInput type="text" formControlName="author" placeholder="Author" />
+  </mat-form-field>
+
+  <mat-form-field class="input-width" appearance="fill">
+    <mat-label>Preview</mat-label>
+    <textarea matInput type="text" formControlName="preview" placeholder="Preview"></textarea>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Select</mat-label>
+    <mat-select formControlName="genre">
+      <mat-option *ngFor="let item of genreList" [value]="item.title">{{item.title}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <div class="button-group">
+    <button type="submit" [disabled]="detailForm.invalid">Save</button>
+    <button (click)="onBack()">Back</button>
+  </div>
+
+</form>
